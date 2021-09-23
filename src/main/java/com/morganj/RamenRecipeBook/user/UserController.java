@@ -1,4 +1,4 @@
-package com.RamenRecipeBook.user;
+package com.morganj.RamenRecipeBook.user;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -9,7 +9,7 @@
     </appender>
 
     <!-- Logger -->
-    <logger name="com.RamenRecipeBook" level="DEBUG" appender-ref="console" />
+    <logger name="com.morganj.RamenRecipe" level="DEBUG" appender-ref="console" />
 
     <!-- Root Logger -->
     <root level="info">

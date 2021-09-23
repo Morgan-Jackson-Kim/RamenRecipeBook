@@ -1,4 +1,4 @@
-package com.RamenRecipeBook.user.dao;
+package com.morganj.RamenRecipeBook.user.dao;
 
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;

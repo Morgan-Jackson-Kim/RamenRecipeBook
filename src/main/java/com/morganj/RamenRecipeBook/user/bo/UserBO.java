@@ -1,9 +1,10 @@
-package com.RamenRecipeBook.user.bo;
+package com.morganj.RamenRecipeBook.user.bo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.RamenRecipeBook.user.dao.UserDAO;
+import com.morganj.RamenRecipeBook.user.dao.UserDAO;
+
 
 @Service
 public class UserBO {

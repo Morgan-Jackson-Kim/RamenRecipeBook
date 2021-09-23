@@ -1,4 +1,4 @@
-package com.RamenRecipeBook.user.model;
+package com.morganj.RamenRecipeBook.user.model;
 
 import java.util.Date;
 

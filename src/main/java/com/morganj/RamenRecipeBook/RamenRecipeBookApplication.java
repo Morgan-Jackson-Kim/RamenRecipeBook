@@ -1,9 +1,7 @@
-package com.RamenRecipeBook.project;
+package com.morganj.RamenRecipeBook;
 
 import org.springframework.boot.SpringApplication;
-
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
 
 
 @SpringBootApplication

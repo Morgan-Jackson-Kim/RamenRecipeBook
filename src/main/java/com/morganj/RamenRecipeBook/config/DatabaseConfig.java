@@ -1,4 +1,4 @@
-package com.RamenRecipeBook.config;
+package com.morganj.RamenRecipeBook.config;
 
 import javax.sql.DataSource;
 
@@ -11,7 +11,7 @@ import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 @Configuration
-@MapperScan(basePackages="com.RamenRecipeBook.*") 
+@MapperScan(basePackages="com.morganj.RamenRecipeBook.*") 
 public class DatabaseConfig {
 	
 	 @Bean

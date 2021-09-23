@@ -1,4 +1,4 @@
-package com.RamenRecipeBook.user;
+package com.morganj.RamenRecipeBook.user;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.RamenRecipeBook.user.bo.UserBO;
+import com.morganj.RamenRecipeBook.user.bo.UserBO;
+
+
 
 @RestController
 @RequestMapping("/user")
