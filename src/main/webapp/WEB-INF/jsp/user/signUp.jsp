@@ -118,7 +118,7 @@
 			$.ajax({
 				type:"post",
 				url:"/user/sign_up",
-				data:{"loginId":loginId, "password":password, "name":name, "email":email},
+				data:{"loginId":loginId, "password":password, "name":name, "email":email "phone":phone},
 				success:function(data) {
 					if(data.result == "success") {
 						location.href="/user/signin_view";
