@@ -33,25 +33,21 @@
 								<input  type="text" id="loginIdInput" class="form-control" placeholder="아이디">
 								<button type="button" class="btn btn-info btn-sm" id="isDuplicateBtn">중복확인</button>
 							</div>
+							<div id="duplicateDiv" class="d-none"><small class="text-danger">중복 ID 입니다.</small></div>
+							<div id="noneDuplicateDiv" class="d-none"><small class="text-success">사용 가능한 ID 입니다.</small></div>
 							
 						<input type="password" class="form-control mt-3" id="passwordInput" placeholder="패스워드">
 									
 						<input type="password" class="form-control mt-3" id="passwordConfirmInput" placeholder="패스워드 확인">
 									
 						<small class="text-danger d-none " id="errorPassword">비밀번호가 일치하지 않습니다.</small>
-						
-						
-						
+														
 						<input type="text" class="form-control mt-3" id="nameInput" placeholder="이름" >
-								
-						
-						
+																				
 						<input type="text" class="form-control mt-3" id="phoneInput" placeholder="전화번호" >
-								
-						
+													
 						<input type="text" class="form-control mt-3" id="emailInput" placeholder="이메일">
-						
-											
+																	
 						<button id="signUpBtn" type="submit" class="btn btn-primary btn-block mt-3">회원가입</button>
 					</form>
 				</div>
@@ -75,6 +71,7 @@
 			var passwordConfirm = $("#passwordConfirmInput").val();
 			var name = $("#nameInput").val().trim();
 			var email = $("#emailInput").val().trim();
+			var phone = $("#phoneInput").val().trim();
 			
 			if(loginId == null || loginId == "") {
 				alert("아이디를 입력하세요");
@@ -101,13 +98,13 @@
 				return ;
 			}
 			
-			// 중복체크 했는지?
+			
 			if(isIdCheck == false) {
 				alert("중복체크를 진행하세요");
 				return ;
 			}
 					
-			// 중복이 되었는지 안되었는지?
+			
 			if(isDuplicate == true) {
 				alert("아이디가 중복되었습니다.");
 				return ;
@@ -128,8 +125,6 @@
 				error:function(e) {
 					alert("회원 가입 실패");
 				}
-				
-				
 			});
 		});
 		
@@ -158,14 +153,11 @@
 						$("#duplicateDiv").addClass("d-none");
 						$("#noneDuplicateDiv").removeClass("d-none");
 					}
-					//isDuplicate = data.is_duplicate;
 					
 				},
 				error:function(e){
 					alert("중복확인 실패");
 				}
-				
-				
 			});
 			
 		})
