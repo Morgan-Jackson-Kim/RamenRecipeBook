@@ -29,12 +29,17 @@
 				<div class="w-100 mr-3 ml-3">
 					<form id="signUpForm" >
 						<h1 class="text-center mb-4">회원가입</h1>
-							<div class="d-flex">
-								<input  type="text" id="loginIdInput" class="form-control" placeholder="아이디">
-								<button type="button" class="btn btn-info btn-sm" id="isDuplicateBtn">중복확인</button>
-							</div>
-							<div id="duplicateDiv" class="d-none"><small class="text-danger">중복 ID 입니다.</small></div>
-							<div id="noneDuplicateDiv" class="d-none"><small class="text-success">사용 가능한 ID 입니다.</small></div>
+				
+						<div class="text-center mt-2 mb-4">라면 레시피를 공유 하려면 가입하세요!</div>
+				
+						<div class="hr-sect">또는</div>
+						
+						<div class="d-flex">
+							<input  type="text" id="loginIdInput" class="form-control" placeholder="아이디">
+							<button type="button" class="btn btn-info btn-sm" id="isDuplicateBtn">중복확인</button>
+						</div>
+						<div id="duplicateDiv" class="d-none"><small class="text-danger">중복 ID 입니다.</small></div>
+						<div id="noneDuplicateDiv" class="d-none"><small class="text-success">사용 가능한 ID 입니다.</small></div>
 							
 						<input type="password" class="form-control mt-3" id="passwordInput" placeholder="패스워드">
 									
@@ -50,6 +55,9 @@
 																	
 						<button id="signUpBtn" type="submit" class="btn btn-primary btn-block mt-3">회원가입</button>
 					</form>
+					
+					<div class="text-center mt-2 mb-4" >이미 아이디가 있으신가요? <a href="/user/signup_view">로그인 하기</a></div>
+					
 				</div>
 			</div>
 		</section>
