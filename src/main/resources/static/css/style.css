@@ -17,6 +17,11 @@ header{
 	height: 700px;
 }
 
+.login-box{
+	width : 400px;
+	height: 400px;
+}
+
 footer{
 	height:50px;
 	background-color: #dcdcdc;

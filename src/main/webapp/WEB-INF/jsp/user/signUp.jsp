@@ -56,7 +56,7 @@
 						<button id="signUpBtn" type="submit" class="btn btn-primary btn-block mt-3">회원가입</button>
 					</form>
 					
-					<div class="text-center mt-2 mb-4" >이미 아이디가 있으신가요? <a href="/user/signup_view">로그인 하기</a></div>
+					<div class="text-center mt-2 mb-4" >이미 아이디가 있으신가요? <a href="/user/signin_view">로그인 하기</a></div>
 					
 				</div>
 			</div>
