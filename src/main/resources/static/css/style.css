@@ -4,7 +4,6 @@
 	width:1200px;
 	height:900px;
 	margin:auto;
-	
 }
 
 header{
@@ -22,10 +21,22 @@ header{
 	height: 400px;
 }
 
+.gallery{
+	height:800px;
+}
+
 footer{
 	height:50px;
 	background-color: #dcdcdc;
 }
+
+nav{
+	width:150px;
+	background-color: #eee;
+	border-right: 1px solid #ddd;
+	
+}
+
 
 .hr-sect {
     display: flex;

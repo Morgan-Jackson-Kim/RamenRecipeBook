@@ -17,36 +17,11 @@
   <link rel="stylesheet" href="/static/css/style.css">
   
   
-<title>라면 레시피 북 - 메인페이지</title>
+<title>라면 레시피 북 - 마이페이지</title>
 </head>
 <body>
 	<div class="wrap">
 		<c:import url="/WEB-INF/jsp/include/mainheader.jsp"/>
-		<section class="">
-			<div class="d-flex">
-				<nav class="menu-nav">
-					<h2>메뉴</h2>
-					<ul class="menu">
-						<li>라면목록</li>
-						<li>추천라면</li>
-						<li>기타</li>
-					</ul>
-				</nav>
-				<div class="gallery bg-secondary">
-					<div id="first-row">
-					</div>
-					
-					<div id="second-row">
-					</div>
-				</div>
-			</div>
-			
-		</section>
-		
-		
-		
-		
-		
 		
 		<c:import url="/WEB-INF/jsp/include/footer.jsp"/>
 	</div>

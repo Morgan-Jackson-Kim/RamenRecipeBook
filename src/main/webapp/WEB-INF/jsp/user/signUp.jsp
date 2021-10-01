@@ -70,7 +70,7 @@
 		var isIdCheck = false;
 		var isDuplicateId = true;
 		
-		$("#signUpForm").on("submit", function(e) {
+		$("#signUpForm").on("submit", function(e){
 			
 			e.preventDefault();
 			
@@ -126,7 +126,7 @@
 			$.ajax({
 				type:"post",
 				url:"/user/sign_up",
-				data:{"loginId":loginId, "password":password, "name":name, "email":email "phone":phone},
+				data:{"loginId":loginId, "password":password, "name":name, "email":email ,"phone":phone},
 				success:function(data) {
 					if(data.result == "success") {
 						location.href="/user/signin_view";
@@ -175,7 +175,6 @@
 			
 		})
 	});
-
 	</script>
 </body>
 </html>
