@@ -32,26 +32,21 @@
 						<li>기타</li>
 					</ul>
 				</nav>
-				<div class="gallery bg-secondary">
-					<div id="first-row">
-					</div>
-					
-					<div id="second-row">
-					</div>
+				<div class="gallery bg-secondary d-flex">
+					<c:forEach  var="PostOnlyGallery" items="${postList }">
+						<div class="card border rounded mt-3">
+							<!--이미지만 -->
+							<div>
+								<img src="${PostOnlyGallery.post.imagePath }" class="w-100 imageClick" data-post-id="${PostOnlyGallery.post.id }">
+							</div>				
+						</div>								
+					</c:forEach>
 				</div>
 			</div>
 			
 		</section>
 		
-		
-		
-		
-		
-		
 		<c:import url="/WEB-INF/jsp/include/footer.jsp"/>
 	</div>
-
-
-
 </body>
 </html>
