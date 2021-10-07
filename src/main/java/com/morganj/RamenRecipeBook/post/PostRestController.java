@@ -20,6 +20,9 @@ public class PostRestController {
 	public Map<String, String> create(
 			@RequestParam("content") String content
 			, @RequestParam(value = "file") MultipartFile file
+			, @RequestParam("ingredient") String ingredient
+			, @RequestParam("usedRamen")
+			, @RequestParam("tag")
 			, HttpServletRequest request
 			){
 		
