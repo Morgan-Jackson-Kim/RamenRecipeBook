@@ -11,8 +11,8 @@ public interface PostDAO {
 			, @Param("userName") String userName
 			, @Param("content") String content
 			, @Param("ingredient") String ingredient
-			, @Param("usedRamen")
-			, @Param("tag")
+			, @Param("usedRamen") String usedRamen
+			, @Param("tag")	String tag
 			, @Param("imagePath") String imagePath
 			);
 	

@@ -13,7 +13,6 @@
  			, `content`
  			, `ingredient`
  			, `usedRamen`
- 			, `tag`
  			, `imagePath`
  			, `createdAt`
  			, `updatedAt`
@@ -23,7 +22,6 @@
  			, #{content}
  			, #{ingredient}
  			, #{usedRamen}
- 			, #{tag}
  			, #{imagePath}
  			, now()
  			, now()
