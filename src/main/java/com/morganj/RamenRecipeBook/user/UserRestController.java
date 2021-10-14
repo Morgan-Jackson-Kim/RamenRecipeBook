@@ -16,8 +16,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.morganj.RamenRecipeBook.user.bo.UserBO;
 import com.morganj.RamenRecipeBook.user.model.User;
 
-
-
 @RestController
 @RequestMapping("/user")
 public class UserRestController {

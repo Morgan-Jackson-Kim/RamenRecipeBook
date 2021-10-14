@@ -22,8 +22,8 @@ public class PostController {
 			HttpServletRequest request
 			, Model model) {
 		
-		HttpSession session = request.getSession();
-		int userId = (Integer)session.getAttribute("userId");
+		//HttpSession session = request.getSession();
+		//int userId = (Integer)session.getAttribute("userId");
 		
 		
 		//model.addAttribute("postList", postList);

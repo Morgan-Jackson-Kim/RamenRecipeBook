@@ -16,6 +16,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import com.morganj.RamenRecipeBook.post.bo.PostBO;
 
+
+
 @RestController
 @RequestMapping("/post")
 public class PostRestController {
@@ -26,21 +28,28 @@ public class PostRestController {
 	@PostMapping("/create")
 	public Map<String, String> create(
 			@RequestParam("content") String content
-			, @RequestParam(value = "file") MultipartFile file
 			, @RequestParam("ingredient") String ingredient
 			, @RequestParam("usedRamen") String usedRamen
-			, @RequestParam(value = "tag" ) List<String> tag
-			, HttpServletRequest request
-			){
+			, @RequestParam("tag" ) String tag
+			, @RequestParam(value = "file") MultipartFile file
+			, HttpServletRequest request){
 		
 		HttpSession session = request.getSession();
 		int userId = (Integer)session.getAttribute("userId");
 		String userName = (String)session.getAttribute("userName");
 		
 		
-		int count = postBO.addPost(userId, userName, content, ingredient, usedRamen, , file);
+		int count = postBO.addPost(userId, userName, content, ingredient, usedRamen, tag, file);
 		
 		Map<String, String> result = new HashMap<>();
+		
+		if(count == 1) {
+			result.put("result", "작성 성공");
+		} else {
+			result.put("result", "작성 실패");
+		}
+		
+		return result;
 		
 	}
 
