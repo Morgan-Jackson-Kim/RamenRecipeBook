@@ -32,9 +32,23 @@
  
  <h1> 📋 주요기능 📋 </h1>
  
+  * 회원가입
+   * package : [com.morganj.RamenRecipeBook.user.*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/java/com/morganj/RamenRecipeBook/user)
+   * view : [/webapp/WEB-INF/jsp/user/*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/webapp/WEB-INF/jsp/user)
+   
+ * 로그인
+   * package : [com.morganj.RamenRecipeBook.user.*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/java/com/morganj/RamenRecipeBook/user)
+   * view : [/webapp/WEB-INF/jsp/user/*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/webapp/WEB-INF/jsp/user)
+
+ - 라면 레시피 작성
+  - 준비중
+ - 라면 레시피 타이머 생성
+  - 준비중
+ 
  
  <h1> 🔨 데모 🔨 </h1>
- 
+  
+  - 준비중
  
  <h1> 📬 외부 라이브러리 라이센스 </h1>
  
@@ -46,6 +60,7 @@
 * jQuery [MIT License](https://opensource.org/licenses/MIT)
 
  <h1> 💬 향후 계획 </h1>
+ 
   * 마이 페이지 기능 추가 
   * 디자인 개선
   * 
