@@ -1,5 +1,5 @@
+![header](https://capsule-render.vercel.app/api?type=transparent&color=37BFF7&height=300&section=header&text=Ramen%20Recipe%20Book&fontSize=90)
 
-<div align=center><h1>Ramen Recipe Book </h1> </div>
 
 <div align=center><h1>💻 Tectical Skills
   
@@ -11,9 +11,44 @@
  </div>
  
  <h1> ➿ 프로젝트 설명 </h1>
- - 라면 레시피를 종합해서 모아놓고 사용자들이 자신의 레시피들을 공유하기 위한 라면 전용 레시피 사이트
- - 타이머 기능을 활용한 레시피 따라하기 
+ 
+  - 라면 레시피를 종합해서 모아놓고 사용자들이 자신의 레시피들을 공유하기 위한 라면 전용 레시피 사이트 
 
+  - 타이머 기능을 활용한 레시피 따라하기 
 
-DB/URL/일정 설계 : https://docs.google.com/spreadsheets/d/1UoEOkiZrNxtiDoD1Bgxq8JfQsheKc9Jgsl0h-iu0TWg/edit?usp=sharing
+ <h1> 📁 포트 폴리오 </h1>
+ 
+ 추가 예정
+ 
+ 
+ <h1> 📐 설계 </h1>
+ 
+  * UI 기획  
+    https://ovenapp.io/view/KY7bg0fFoOFScOZD9uvG3v0jaJtuVZUM/ONdAj
+    
+  * 데이터 베이스, URL 설계  
+     https://docs.google.com/spreadsheets/d/1UoEOkiZrNxtiDoD1Bgxq8JfQsheKc9Jgsl0h-iu0TWg/edit?usp=sharing
+ 
+ 
+ <h1> 📋 주요기능 📋 </h1>
+ 
+ 
+ <h1> 🔨 데모 🔨 </h1>
+ 
+ 
+ <h1> 📬 외부 라이브러리 라이센스 </h1>
+ 
+* Tomcat [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0) 
+* Mysql [GPLv2 or proprietary](https://www.gnu.org/licenses/gpl-3.0.html)
+* Spring framework [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)  
+* Mybatis [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)
+* Bootstrap [MIT License](https://opensource.org/licenses/MIT)
+* jQuery [MIT License](https://opensource.org/licenses/MIT)
+
+ <h1> 💬 향후 계획 </h1>
+  * 마이 페이지 기능 추가 
+  * 디자인 개선
+  * 
+ 
+
 
