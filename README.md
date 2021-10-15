@@ -9,6 +9,10 @@
   
   </h1>
  </div>
+ 
+ <h1> ➿ 프로젝트 설명 </h1>
+ - 라면 레시피를 종합해서 모아놓고 사용자들이 자신의 레시피들을 공유하기 위한 라면 전용 레시피 사이트
+ - 타이머 기능을 활용한 레시피 따라하기 
 
 
 DB/URL/일정 설계 : https://docs.google.com/spreadsheets/d/1UoEOkiZrNxtiDoD1Bgxq8JfQsheKc9Jgsl0h-iu0TWg/edit?usp=sharing
