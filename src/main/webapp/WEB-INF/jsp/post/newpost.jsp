@@ -14,6 +14,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- css style 적용 -->
+
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  	 
   <link rel="stylesheet" href="/static/css/style.css">
   
   
@@ -47,6 +50,19 @@
 							<input class="form-control nameBox" type="text" id="usedRamen" placeholder="사용한 라면">
 						</div>
 					</div>
+					
+					<section class="progressArea border rounded mt-3">
+						<textarea class="form-control w-100 border-0 non-resize" rows="20"  id="contentInput"></textarea>
+					</section>
+					
+					<div class="d-flex justify-content-between m-2">
+						<div>
+							<input class="input-control d-none" type="file" id="fileInput">
+							<a href="#" id="imageUploadBtn"><i class="bi bi-image image-upload-icon"></i></a>
+							<button class="btn btn-lg btn-info" id="uploadBtn">이미지 업로드</button>
+						</div>
+					</div>
+					
 				</div>
 			</div>
 			</section>
