@@ -1,4 +1,4 @@
-![header]<div align=center>(https://capsule-render.vercel.app/api?type=rect&color=auto&height=300&section=header&text=Ramen%20Recipe%20Book&fontSize=70&textBg=true)</div>
+![header](https://capsule-render.vercel.app/api?type=rect&color=auto&height=300&section=header&text=Ramen%20Recipe%20Book&fontSize=70&textBg=true)
 
 <div align=center><h1>💻 Tectical Skills</h1></div>
 
