@@ -32,10 +32,10 @@
  
  <h1> 📋 주요기능 📋 </h1>
  
-  * 회원가입
+ * 회원가입
    * package : [com.morganj.RamenRecipeBook.user.*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/java/com/morganj/RamenRecipeBook/user)
    * view : [/webapp/WEB-INF/jsp/user/*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/webapp/WEB-INF/jsp/user)
-   
+ 
  * 로그인
    * package : [com.morganj.RamenRecipeBook.user.*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/java/com/morganj/RamenRecipeBook/user)
    * view : [/webapp/WEB-INF/jsp/user/*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/webapp/WEB-INF/jsp/user)
