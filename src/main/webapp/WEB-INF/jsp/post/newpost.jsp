@@ -35,41 +35,42 @@
 						<li>기타</li>
 					</ul>
 				</nav>
-				<div class="gallery" id="postForm">
-					<div class="form-inline form-group">
-					<label for="racipeName " class="control-label display-4">레시피 이름 : </label> 
-					<input class="form-control nameBox ml-3 mt-2 mb-2" type="text" id="racipeNameInput" placeholder="레시피 이름">
-					</div>
-					<div class="ingredientBox justify-content-between d-flex">
+				<div class="gallery" >
+					<form id="postForm">
 						<div class="form-inline form-group">
-							<label for="ingredient" class="control-label">필요재료:</label> 
-							<input class="form-control nameBox" type="text" id="ingredientInput" placeholder="재료">
+							<label for="racipeName " class="control-label display-4">레시피 이름 : </label> 
+							<input class="form-control nameBox ml-3 mt-2 mb-2" type="text" id="racipeNameInput" placeholder="레시피 이름">
 						</div>
-						<div class="form-inline form-group">
-							<label for="usedRamen" class="control-label">사용한 라면:</label> 
-							<input class="form-control nameBox" type="text" id="usedRamenInput" placeholder="사용한 라면">
-						</div>
-					</div>
-					
-					<section class="progressArea border rounded ">
-						<textarea class="form-control w-100 border-0 non-resize" rows="20"  id="contentInput"></textarea>
-					</section>
-					
-					<div class="d-flex justify-content-between ml-2">
-						<div>
-							<a href="#" id="imageUploadBtn"><i class="bi bi-image image-upload-icon"></i></a>
-							<input class="input-control " type="file" id="fileInput">				
-						</div>
-						<div>
-							<input class="form-control nameBox" type="text" id="tagInput" placeholder="태그">
+						<div class="ingredientBox justify-content-between d-flex">
+							<div class="form-inline form-group">
+								<label for="ingredient" class="control-label">필요재료:</label> 
+								<input class="form-control nameBox" type="text" id="ingredientInput" placeholder="재료">
+							</div>
+							<div class="form-inline form-group">
+								<label for="usedRamen" class="control-label">사용한 라면:</label> 
+								<input class="form-control nameBox" type="text" id="usedRamenInput" placeholder="사용한 라면">
+							</div>
 						</div>
 						
-					</div>
-					<div class="d-flex justify-content-between mt-2 ml-2">
-						<%-- <button class="btn btn-lg btn-danger" id="cocktimerBtn">쿠킹 타이머(비활성화)</button>--%>
-						<button class="btn btn-lg btn-primary" type="submit" id="submitBtn">작성 완료</button>
-					</div>
-					
+						<section class="progressArea border rounded ">
+							<textarea class="form-control w-100 border-0 non-resize" rows="20"  id="contentInput"></textarea>
+						</section>
+						
+						<div class="d-flex justify-content-between ml-2">
+							<div>
+								<a href="#" id="imageUploadBtn"><i class="bi bi-image image-upload-icon"></i></a>
+								<input class="input-control " type="file" id="fileInput">				
+							</div>
+							<div>
+								<input class="form-control nameBox" type="text" id="tagInput" placeholder="태그">
+							</div>
+							
+						</div>
+						<div class="d-flex justify-content-between mt-2 ml-2">
+							<%-- <button class="btn btn-lg btn-danger" id="cocktimerBtn">쿠킹 타이머(비활성화)</button>--%>
+							<button class="btn btn-lg btn-primary" type="submit" id="submitBtn">작성 완료</button>
+						</div>
+					</form>
 				</div>
 			</div>
 			</section>
@@ -78,7 +79,10 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$("#postForm").on("submit", function() {
+			$("#postForm").on("submit", function(e) {
+				
+				e.preventDefault();
+				
 				let content = $("#contentInput").val().trim();
 				let racipeName = $("#racipeNameInput").val().trim();
 				let ingredient = $("#ingredientInput").val().trim();
