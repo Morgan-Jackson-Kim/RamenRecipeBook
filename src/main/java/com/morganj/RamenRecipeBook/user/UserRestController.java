@@ -35,7 +35,7 @@ public class UserRestController {
 		
 		int count = userBO.signUp(loginId, password, name, email, phone);
 		
-		if(count==1) {
+		if(count == 1) {
 			result.put("result","회원가입 성공!");
 		}else {
 			result.put("result", "회원가입 실패.");
@@ -69,6 +69,7 @@ public class UserRestController {
 		User user = userBO.signIn(loginId, password);
 		if(user != null) {
 			result.put("result", "success");
+			
 			HttpSession session = request.getSession();
 			session.setAttribute("userId", user.getId());
 			session.setAttribute("userLoginId", user.getLoginId());

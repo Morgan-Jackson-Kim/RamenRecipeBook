@@ -130,7 +130,6 @@
 				success:function(data) {
 					if(data.result == "success") {
 						location.href="/user/signin_view";
-						
 					} else {
 						alert("회원 가입 실패");
 					}
@@ -142,7 +141,7 @@
 		});
 		
 		$("#isDuplicateBtn").on("click", function() {
-			
+					
 			var loginId = $("#loginIdInput").val();
 			
 			if(loginId == null || loginId == "") {
@@ -165,8 +164,7 @@
 						isDuplicate = false;
 						$("#duplicateDiv").addClass("d-none");
 						$("#noneDuplicateDiv").removeClass("d-none");
-					}
-					
+					}		
 				},
 				error:function(e){
 					alert("중복확인 실패");

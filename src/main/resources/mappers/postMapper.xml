@@ -10,6 +10,7 @@
  		(
  			`userId`
  			, `userName`
+ 			, `recipeName`
  			, `content`
  			, `ingredient`
  			, `usedRamen`
@@ -20,6 +21,7 @@
  		) VALUES (
  			#{userId}
  			, #{userName}
+ 			, #{recipeName}
  			, #{content}
  			, #{ingredient}
  			, #{usedRamen}
@@ -30,5 +32,24 @@
  		)
  	
  	</insert>
+ 	
+ 	<select id="selectPostImages" resultType="com.morganj.RamenRecipeBook.post.model.Post">
+ 		SELECT
+ 			`id`
+ 			,`userId`
+ 			, `userName`
+ 			, `recipeName`
+ 			, `content`
+ 			, `ingredient`
+ 			, `usedRamen`
+ 			, `tag`
+ 			, `imagePath`
+ 			, `createdAt`
+ 			, `updatedAt`
+ 		FROM
+ 			`post`
+ 		ORDER BY
+ 			`createdAt` DESC
+ 	</select>
  
  </mapper>

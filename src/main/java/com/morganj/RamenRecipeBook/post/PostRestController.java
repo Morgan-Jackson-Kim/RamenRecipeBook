@@ -27,11 +27,12 @@ public class PostRestController {
 	
 	@PostMapping("/create")
 	public Map<String, String> create(
-			@RequestParam("content") String content
+			@RequestParam("recipeName") String recipeName
+			, @RequestParam("content") String content
 			, @RequestParam("ingredient") String ingredient
 			, @RequestParam("usedRamen") String usedRamen
 			, @RequestParam("tag" ) String tag
-			, @RequestParam(value = "file") MultipartFile file
+			, @RequestParam(value = "file",required = false) MultipartFile file
 			, HttpServletRequest request){
 		
 		HttpSession session = request.getSession();
@@ -39,7 +40,7 @@ public class PostRestController {
 		String userName = (String)session.getAttribute("userName");
 		
 		
-		int count = postBO.addPost(userId, userName, content, ingredient, usedRamen, tag, file);
+		int count = postBO.addPost(userId, userName,recipeName, content, ingredient, usedRamen, tag, file);
 		
 		Map<String, String> result = new HashMap<>();
 		

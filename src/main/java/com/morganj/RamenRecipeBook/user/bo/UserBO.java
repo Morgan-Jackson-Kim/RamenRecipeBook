@@ -28,7 +28,7 @@ public class UserBO {
 			return 0;
 		}
 		
-		return userDAO.insertNewUser(loginId, password, name, email, phone);
+		return userDAO.insertNewUser(loginId, encryptPassword, name, email, phone);
 	}
 	
 	public boolean isDuplicateId(String loginId) {

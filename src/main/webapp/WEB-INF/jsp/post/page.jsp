@@ -29,15 +29,16 @@
 					<ul class="menu">
 						<li>라면목록</li>
 						<li>추천라면</li>
-						<li>기타</li>
+						<li><a href="/post/newpost">새 레시피 작성</a></li>
 					</ul>
 				</nav>
 				<div class="gallery bg-secondary d-flex">
-					<c:forEach  var="PostOnlyGallery" items="${postList }">
+					<c:forEach  var="PostOnlyGallery" items="${postList}">
 						<div class="card border rounded mt-3">
 							<!--이미지만 -->
+							<div>${PostOnlyGallery.post.recipeName}</div>
 							<div>
-								<img src="${PostOnlyGallery.post.imagePath }" class="w-100 imageClick" data-post-id="${PostOnlyGallery.post.id }">
+								<img src="${PostOnlyGallery.post.imagePath}" class="w-100 imageClick" data-post-id="${PostOnlyGallery.post.id}">
 							</div>				
 						</div>								
 					</c:forEach>

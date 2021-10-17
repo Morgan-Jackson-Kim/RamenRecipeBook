@@ -69,7 +69,7 @@
 					data:{"loginId":loginId, "password":password},
 					success:function(data) {
 						if(data.result == "success") {
-							location.href="/main/page_view"
+							location.href="/post/main"
 							//메인페이지로 이동
 						} else {
 							alert("아이디 비밀번호를 확인하세요");

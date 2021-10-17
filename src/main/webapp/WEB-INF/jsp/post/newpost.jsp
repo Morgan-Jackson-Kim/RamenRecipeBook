@@ -35,32 +35,39 @@
 						<li>기타</li>
 					</ul>
 				</nav>
-				<div class="gallery">
+				<div class="gallery" id="postForm">
 					<div class="form-inline form-group">
 					<label for="racipeName " class="control-label display-4">레시피 이름 : </label> 
-					<input class="form-control nameBox ml-3 mt-2 mb-2" type="text" id="racipeName" placeholder="레시피 이름">
+					<input class="form-control nameBox ml-3 mt-2 mb-2" type="text" id="racipeNameInput" placeholder="레시피 이름">
 					</div>
-					<div class="ingredientBox d-flex">
+					<div class="ingredientBox justify-content-between d-flex">
 						<div class="form-inline form-group">
 							<label for="ingredient" class="control-label">필요재료:</label> 
-							<input class="form-control nameBox" type="text" id="ingredient" placeholder="재료">
+							<input class="form-control nameBox" type="text" id="ingredientInput" placeholder="재료">
 						</div>
 						<div class="form-inline form-group">
 							<label for="usedRamen" class="control-label">사용한 라면:</label> 
-							<input class="form-control nameBox" type="text" id="usedRamen" placeholder="사용한 라면">
+							<input class="form-control nameBox" type="text" id="usedRamenInput" placeholder="사용한 라면">
 						</div>
 					</div>
 					
-					<section class="progressArea border rounded mt-3">
+					<section class="progressArea border rounded ">
 						<textarea class="form-control w-100 border-0 non-resize" rows="20"  id="contentInput"></textarea>
 					</section>
 					
-					<div class="d-flex justify-content-between m-2">
+					<div class="d-flex justify-content-between ml-2">
 						<div>
-							<input class="input-control d-none" type="file" id="fileInput">
 							<a href="#" id="imageUploadBtn"><i class="bi bi-image image-upload-icon"></i></a>
-							<button class="btn btn-lg btn-info" id="uploadBtn">이미지 업로드</button>
+							<input class="input-control " type="file" id="fileInput">				
 						</div>
+						<div>
+							<input class="form-control nameBox" type="text" id="tagInput" placeholder="태그">
+						</div>
+						
+					</div>
+					<div class="d-flex justify-content-between mt-2 ml-2">
+						<%-- <button class="btn btn-lg btn-danger" id="cocktimerBtn">쿠킹 타이머(비활성화)</button>--%>
+						<button class="btn btn-lg btn-primary" type="submit" id="submitBtn">작성 완료</button>
 					</div>
 					
 				</div>
@@ -68,5 +75,75 @@
 			</section>
 		<c:import url="/WEB-INF/jsp/include/footer.jsp"/>
 	</div>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#postForm").on("submit", function() {
+				let content = $("#contentInput").val().trim();
+				let racipeName = $("#racipeNameInput").val().trim();
+				let ingredient = $("#ingredientInput").val().trim();
+				let usedRamen = $("#usedRamenInput").val().trim();
+				let tag = $("#tagInput").val().trim();
+					
+				if(racipeName == null || racipeName == "") {
+					alert("레시피 이름을 입력하세요");
+					return ;
+				}
+				
+				if(ingredient == null || ingredient == "") {
+					alert("재료들을 입력하세요");
+					return ;
+				}
+				
+				if(usedRamen == null || usedRamen == "") {
+					alert("사용한 라면을 입력하세요");
+					return ;
+				}
+				
+				if(content == null || content == "") {
+					alert("내용을 입력하세요");
+					return ;
+				}
+			
+				if($("#fileInput")[0].files.length == 0) {
+					alert("파일을 추가하세요");
+					return ;
+				}
+				
+				var formData = new FormData();
+				formData.append("file", $("#fileInput")[0].files[0]);
+				formData.append("content", content);
+				
+				$.ajax({
+					enctype: 'multipart/form-data', 
+					type:"post",
+					url:"/post/create",
+					processData: false, 
+		        	contentType: false,  
+					data:formData,
+					success:function(data) {
+						if(data.result == "success") {
+							location.href="/post/main";
+						} else {
+							alert("레시피 등록에 실패했습니다.");
+						}
+						
+					}, error:function(e) {
+						alert("error ");
+					}
+				});
+				
+			});		
+			
+			$("#imageUploadBtn").on("click", function() {
+				$("#fileInput").click();
+			});
+			
+		});	
+		
+				
+	</script>
+	
+	
 </body>
 </html>
