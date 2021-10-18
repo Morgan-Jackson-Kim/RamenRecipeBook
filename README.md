@@ -18,7 +18,7 @@
 
  <h1> 📁 포트 폴리오 </h1>
  
- 추가 예정
+ <a href="https://docs.google.com/presentation/d/1ndjqD5X28APIw6MM3ybtkctR7LnTetkE/edit?usp=sharing&ouid=117895714106465802182&rtpof=true&sd=true">포트 폴리오 </a>
  
  
  <h1> 📐 설계 </h1>
