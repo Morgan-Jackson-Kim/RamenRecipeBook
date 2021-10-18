@@ -40,8 +40,10 @@
    * package : [com.morganj.RamenRecipeBook.user.*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/java/com/morganj/RamenRecipeBook/user)
    * view : [/webapp/WEB-INF/jsp/user/*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/webapp/WEB-INF/jsp/user)
 
- - 라면 레시피 작성
-  - 준비중
+ * 라면 레시피 작성
+   * package : [com.morganj.RamenRecipeBook.user.*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/java/com/morganj/RamenRecipeBook/post)
+   * view : [/webapp/WEB-INF/jsp/user/*](https://github.com/Morgan-Jackson-Kim/RamenRecipeBook/tree/develop/src/main/webapp/WEB-INF/jsp/post)
+ 
  - 라면 레시피 타이머 생성
   - 준비중
  
