@@ -7,6 +7,7 @@ public class Post {
 	private int id;
 	private int userId;
 	private String userName;
+	private String recipeName;
 	private String content;
 	private String ingredient;
 	private String usedRamen;
@@ -74,5 +75,11 @@ public class Post {
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public String getRecipeName() {
+		return recipeName;
+	}
+	public void setRecipeName(String recipeName) {
+		this.recipeName = recipeName;
 	}
 }

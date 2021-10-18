@@ -2,10 +2,11 @@ package com.morganj.RamenRecipeBook;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
 
 @SpringBootApplication
-public class RamenRecipeBookApplication {
+public class RamenRecipeBookApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RamenRecipeBookApplication.class, args);

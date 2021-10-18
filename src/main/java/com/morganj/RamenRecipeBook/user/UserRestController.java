@@ -36,9 +36,9 @@ public class UserRestController {
 		int count = userBO.signUp(loginId, password, name, email, phone);
 		
 		if(count == 1) {
-			result.put("result","회원가입 성공!");
+			result.put("result","success");
 		}else {
-			result.put("result", "회원가입 실패.");
+			result.put("result", "fail");
 		}
 		
 		return result;

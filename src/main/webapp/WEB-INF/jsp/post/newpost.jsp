@@ -39,7 +39,7 @@
 					<form id="postForm">
 						<div class="form-inline form-group">
 							<label for="racipeName " class="control-label display-4">레시피 이름 : </label> 
-							<input class="form-control nameBox ml-3 mt-2 mb-2" type="text" id="racipeNameInput" placeholder="레시피 이름">
+							<input class="form-control nameBox ml-3 mt-2 mb-2" type="text" id="recipeNameInput" placeholder="레시피 이름">
 						</div>
 						<div class="ingredientBox justify-content-between d-flex">
 							<div class="form-inline form-group">
@@ -84,12 +84,12 @@
 				e.preventDefault();
 				
 				let content = $("#contentInput").val().trim();
-				let racipeName = $("#racipeNameInput").val().trim();
-				let ingredient = $("#ingredientInput").val().trim();
-				let usedRamen = $("#usedRamenInput").val().trim();
-				let tag = $("#tagInput").val().trim();
+				var recipeName = $("#recipeNameInput").val();
+				var ingredient = $("#ingredientInput").val();
+				var usedRamen = $("#usedRamenInput").val();
+				var tag = $("#tagInput").val();
 					
-				if(racipeName == null || racipeName == "") {
+				if(recipeName == null || recipeName == "") {
 					alert("레시피 이름을 입력하세요");
 					return ;
 				}
@@ -116,7 +116,12 @@
 				
 				var formData = new FormData();
 				formData.append("file", $("#fileInput")[0].files[0]);
+				formData.append("recipeName" , recipeName);
 				formData.append("content", content);
+				formData.append("ingredient" , ingredient);
+				formData.append("usedRamen" , usedRamen);
+				formData.append("tag" , tag);
+		
 				
 				$.ajax({
 					enctype: 'multipart/form-data', 
@@ -127,13 +132,12 @@
 					data:formData,
 					success:function(data) {
 						if(data.result == "success") {
-							location.href="/post/main";
+							location.href = "/post/main";
 						} else {
 							alert("레시피 등록에 실패했습니다.");
 						}
-						
 					}, error:function(e) {
-						alert("error ");
+						alert("ajax error");
 					}
 				});
 				

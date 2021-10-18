@@ -30,7 +30,6 @@
  			, now()
  			, now()
  		)
- 	
  	</insert>
  	
  	<select id="selectPostImages" resultType="com.morganj.RamenRecipeBook.post.model.Post">

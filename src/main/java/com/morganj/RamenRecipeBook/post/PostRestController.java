@@ -40,14 +40,14 @@ public class PostRestController {
 		String userName = (String)session.getAttribute("userName");
 		
 		
-		int count = postBO.addPost(userId, userName,recipeName, content, ingredient, usedRamen, tag, file);
+		int count = postBO.addPost(userId, userName, recipeName, content, ingredient, usedRamen, tag, file);
 		
 		Map<String, String> result = new HashMap<>();
 		
 		if(count == 1) {
-			result.put("result", "작성 성공");
+			result.put("result", "success");
 		} else {
-			result.put("result", "작성 실패");
+			result.put("result", "fail");
 		}
 		
 		return result;
